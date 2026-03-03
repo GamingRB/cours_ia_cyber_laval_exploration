@@ -43,10 +43,7 @@ y = dataset.y
 
 # %%
 # Display the number of rows and columns
-<<<<<<< HEAD
 print(X.shape)
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %%
@@ -61,24 +58,19 @@ X.head()
 
 # %%
 # Count how many respondents belong to each region
-<<<<<<< HEAD
 print(y.value_counts())
 
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %%
 # Visualize the target distribution with a bar plot
 # hint: use barh
-<<<<<<< HEAD
 y.value_counts().plot(kind='barh')
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %% [markdown]
 # Is the target balanced (roughly the same number of examples per class) or imbalanced?
+# La cible n'est pas équilibrée.
 
 # %% [markdown]
 # ## Question 3: What are the features that can be used to predict the target?
@@ -87,29 +79,20 @@ y.value_counts().plot(kind='barh')
 
 # %%
 # List all column names
-<<<<<<< HEAD
 print(X.columns.tolist())
 
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %%
 # Show data types for each column
-<<<<<<< HEAD
 print(X.dtypes)
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %% [markdown]
 # How many features are numerical? How many are categorical (text)?
 
 # %%
-<<<<<<< HEAD
 Il y a une seule features numériques et 27 textuelles.
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 # %%
 from skrub import TableReport
@@ -123,10 +106,7 @@ TableReport(X)
 
 # %%
 # Check for NaN missing values
-<<<<<<< HEAD
 print(X.isnull().sum())
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %% [markdown]
@@ -135,17 +115,11 @@ print(X.isnull().sum())
 # %%
 # Look at unique values for the Household_Income column
 # #X["Household_Income"].??
-<<<<<<< HEAD
 print(X["Household_Income"].unique())
 
 # %%
 # Look at unique values for the Education column
 print(X["Education"].unique())
-=======
-
-# %%
-# Look at unique values for the Education column
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 # %% [markdown]
 # Do you see a special value that could represent missing data?
@@ -158,18 +132,12 @@ print(X["Education"].unique())
 # %%
 # TODO: display the value counts for the column
 # "How_much_do_you_personally_identify_as_a_Midwesterner"
-<<<<<<< HEAD
 print(X["How_much_do_you_personally_identify_as_a_Midwesterner"].value_counts())
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %%
 # TODO: make a bar plot of the results
-<<<<<<< HEAD
 X["How_much_do_you_personally_identify_as_a_Midwesterner"].value_counts().plot(kind='bar')
-=======
->>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 
 # %% [markdown]
