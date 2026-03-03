@@ -1,0 +1,6 @@
+# pixi environments
+.pixi
+*.ipynb
+/.claude
+*/__pycache__/*
+.vscode/*
