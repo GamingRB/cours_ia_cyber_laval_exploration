@@ -7,9 +7,15 @@
 #       format_version: '1.3'
 #       jupytext_version: 1.19.1
 #   kernelspec:
+<<<<<<< HEAD
 #     display_name: Python 3
 #     language: python
 #     name: python3
+=======
+#     display_name: Python (pixi)
+#     language: python
+#     name: cours_ia_cyber_laval_exploration
+>>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 # ---
 
 # %% [markdown]
@@ -97,11 +103,19 @@ cv_gb = cross_val_score(model_gb, X, y, cv=5)
 # We will define the positive class as "North Central".
 
 # %%
+<<<<<<< HEAD
 y_pred_gb = model_gb.predict(X_test)
 
 # %%
 from skore import EstimatorReport
 report = EstimatorReport(estimator = model_gb,
+=======
+y_pred_lr = model_lr.predict(X_test)
+
+# %%
+from skore import EstimatorReport
+report = EstimatorReport(estimator = model_lr,
+>>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
                 X_test = X_test,
                 y_test = y_test)
 report.help()
@@ -111,15 +125,19 @@ report.metrics.summarize(pos_label="North Central").frame()
 
 # %% [markdown]
 # Which model has the highest recall?
+<<<<<<< HEAD
 # Le modèle avec le plus rappel est model_gb
 
 # %%
+=======
+>>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 
 # %% [markdown]
 # ## Question 7: Which model has the best practical application?
 #
 # Let's say that it costs 10 to make a false positive error, while it costs 1 to make a false negative error. Correctly predicting a positive example gains 5, while correctly predicting a negative example gains 2.
 
+<<<<<<< HEAD
 # %% [markdown]
 # Which model makes the most meaningful predictions in practice?
 
@@ -153,6 +171,13 @@ results
 # %% [markdown]
 # C'est le model_GB (Gradient Boosting).
 
+=======
+# %%
+
+# %% [markdown]
+# Which model makes the most meaningful predictions in practice?
+
+>>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
 # %% [markdown]
 # ## Question 8: Which model generalizes the best?
 #
@@ -177,6 +202,7 @@ results
 # My choice: ...
 # Reason: ...
 
+<<<<<<< HEAD
 
 from sklearn.model_selection import cross_validate
 import numpy as np
@@ -210,3 +236,5 @@ for name, model in [
 
 gaps
 
+=======
+>>>>>>> bab3725d4e388d02f6c2323754cad04b60dfdb59
